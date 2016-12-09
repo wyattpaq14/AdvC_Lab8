@@ -1,2 +1,10 @@
 c:\users\001382793\documents\visual studio 2012\Projects\AdvC--Lab7\AdvC--Lab7\bin\Debug\AdvC--Lab7.exe.config
 C:\Users\paqui\Source\Repos\AdvC_Lab8\AdvC--Lab7\bin\Debug\AdvC--Lab7.exe.config
+C:\Users\paqui\Source\Repos\AdvC_Lab8\AdvC--Lab7\bin\Debug\AdvC--Lab7.exe
+C:\Users\paqui\Source\Repos\AdvC_Lab8\AdvC--Lab7\bin\Debug\AdvC--Lab7.pdb
+C:\Users\paqui\Source\Repos\AdvC_Lab8\AdvC--Lab7\obj\Debug\AdvC--Lab7.csprojResolveAssemblyReference.cache
+C:\Users\paqui\Source\Repos\AdvC_Lab8\AdvC--Lab7\obj\Debug\AdvC__Lab7.Form1.resources
+C:\Users\paqui\Source\Repos\AdvC_Lab8\AdvC--Lab7\obj\Debug\AdvC__Lab7.Properties.Resources.resources
+C:\Users\paqui\Source\Repos\AdvC_Lab8\AdvC--Lab7\obj\Debug\AdvC--Lab7.csproj.GenerateResource.Cache
+C:\Users\paqui\Source\Repos\AdvC_Lab8\AdvC--Lab7\obj\Debug\AdvC--Lab7.exe
+C:\Users\paqui\Source\Repos\AdvC_Lab8\AdvC--Lab7\obj\Debug\AdvC--Lab7.pdb

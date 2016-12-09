@@ -37,6 +37,7 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.cbCustomer = new System.Windows.Forms.ComboBox();
             this.cbProoduct = new System.Windows.Forms.ComboBox();
+            this.productsTableAdapter = new AdvC__Lab7.SE255_MMABooksDataSetTableAdapters.ProductsTableAdapter();
             this.SuspendLayout();
             // 
             // label1
@@ -107,6 +108,7 @@
             this.cbCustomer.Name = "cbCustomer";
             this.cbCustomer.Size = new System.Drawing.Size(121, 21);
             this.cbCustomer.TabIndex = 9;
+            this.cbCustomer.ValueMember = "CustomerID";
             // 
             // cbProoduct
             // 
@@ -115,6 +117,11 @@
             this.cbProoduct.Name = "cbProoduct";
             this.cbProoduct.Size = new System.Drawing.Size(121, 21);
             this.cbProoduct.TabIndex = 10;
+            this.cbProoduct.ValueMember = "ProductCode";
+            // 
+            // productsTableAdapter
+            // 
+            this.productsTableAdapter.ClearBeforeFill = true;
             // 
             // Form1
             // 
@@ -132,6 +139,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -148,6 +156,7 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.ComboBox cbCustomer;
         private System.Windows.Forms.ComboBox cbProoduct;
+        private SE255_MMABooksDataSetTableAdapters.ProductsTableAdapter productsTableAdapter;
     }
 }
 
