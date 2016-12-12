@@ -37,7 +37,6 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.cbCustomer = new System.Windows.Forms.ComboBox();
             this.cbProoduct = new System.Windows.Forms.ComboBox();
-            this.productsTableAdapter = new AdvC__Lab7.SE255_MMABooksDataSetTableAdapters.ProductsTableAdapter();
             this.SuspendLayout();
             // 
             // label1
@@ -71,7 +70,7 @@
             // 
             this.txtDate.Location = new System.Drawing.Point(93, 115);
             this.txtDate.Name = "txtDate";
-            this.txtDate.Size = new System.Drawing.Size(121, 20);
+            this.txtDate.Size = new System.Drawing.Size(258, 20);
             this.txtDate.TabIndex = 5;
             // 
             // btnRegisterProduct
@@ -103,25 +102,23 @@
             // 
             // cbCustomer
             // 
+            this.cbCustomer.DisplayMember = "CustomerID";
             this.cbCustomer.FormattingEnabled = true;
             this.cbCustomer.Location = new System.Drawing.Point(93, 34);
             this.cbCustomer.Name = "cbCustomer";
-            this.cbCustomer.Size = new System.Drawing.Size(121, 21);
+            this.cbCustomer.Size = new System.Drawing.Size(259, 21);
             this.cbCustomer.TabIndex = 9;
             this.cbCustomer.ValueMember = "CustomerID";
             // 
             // cbProoduct
             // 
+            this.cbProoduct.DisplayMember = "ProductCode";
             this.cbProoduct.FormattingEnabled = true;
             this.cbProoduct.Location = new System.Drawing.Point(93, 77);
             this.cbProoduct.Name = "cbProoduct";
-            this.cbProoduct.Size = new System.Drawing.Size(121, 21);
+            this.cbProoduct.Size = new System.Drawing.Size(258, 21);
             this.cbProoduct.TabIndex = 10;
             this.cbProoduct.ValueMember = "ProductCode";
-            // 
-            // productsTableAdapter
-            // 
-            this.productsTableAdapter.ClearBeforeFill = true;
             // 
             // Form1
             // 
@@ -156,7 +153,6 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.ComboBox cbCustomer;
         private System.Windows.Forms.ComboBox cbProoduct;
-        private SE255_MMABooksDataSetTableAdapters.ProductsTableAdapter productsTableAdapter;
     }
 }
 
