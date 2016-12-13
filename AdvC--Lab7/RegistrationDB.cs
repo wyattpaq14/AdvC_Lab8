@@ -6,7 +6,18 @@ using System.Threading.Tasks;
 
 namespace AdvC__Lab7
 {
-    public class RegistrationDB
+    public static class RegistrationDB
     {
+        public static bool AddRegistration()
+        {
+            if (5>2)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }

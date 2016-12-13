@@ -8,16 +8,38 @@ namespace AdvC__Lab7
 {
     public class Customer
     {
+        private int customerID;
+        private string name;
         
 
-        public Customer()
-        {
+        public Customer() { }
 
+        public int CustomerID
+        {
+            get
+            {
+                return customerID;
+            }
+            set
+            {
+                customerID = value;
+            }
         }
 
-        public int customerID { get; set; }
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
+            set
+            {
+                name = value;
+            }
+        }
 
-        public string customerName { get; set; }
+        
+
 
     }
 }
