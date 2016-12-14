@@ -33,11 +33,28 @@ namespace AdvC__Lab7
 
         private void btnRegisterProduct_Click(object sender, EventArgs e)
         {
-            //Registration printout
-
-            MessageBox.Show("Customer Name: " + cbCustomer.SelectedValue + "\n" + "Product Code: " + cbProoduct.SelectedValue);
+            //Registration class
+            Registration reg = new Registration();
+            reg.CustomerName = cbCustomer.SelectedValue.ToString();
+            reg.ProductCode = cbProoduct.SelectedValue.ToString();
             
 
+            //try convert to check for valid date
+
+            try
+            {
+                reg.RegistrationDate = Convert.ToDateTime(txtDate.Text);
+            }
+            catch
+            {
+                MessageBox.Show("Error, invalid date!", "Error");
+            }
+
+            //Registration printout
+            MessageBox.Show("Customer Name: " + cbCustomer.SelectedValue + "\n" + "Product Code: " + cbProoduct.SelectedValue +
+                "\n" + "Registration Date: " + txtDate.Text);
+
+            
 
             //save registration
             RegistrationDB.AddRegistration();

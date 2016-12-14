@@ -15,7 +15,7 @@ namespace AdvC__Lab7
 
         public Registration() { }
 
-        public string CustomerId
+        public string CustomerName
         {
             get
             {
