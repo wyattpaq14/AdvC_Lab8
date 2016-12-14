@@ -27,7 +27,7 @@ namespace AdvC__Lab7
 
             cbProoduct.DataSource = ProductDB.GetProducts();
 
-            
+
 
         }
 
@@ -37,7 +37,10 @@ namespace AdvC__Lab7
             Registration reg = new Registration();
             reg.CustomerName = cbCustomer.SelectedValue.ToString();
             reg.ProductCode = cbProoduct.SelectedValue.ToString();
-            
+
+            //assume data is valid
+            reg.ValidData = true;
+
 
             //try convert to check for valid date
 
@@ -48,16 +51,23 @@ namespace AdvC__Lab7
             catch
             {
                 MessageBox.Show("Error, invalid date!", "Error");
+                reg.ValidData = false;
             }
 
-            //Registration printout
-            MessageBox.Show("Customer Name: " + cbCustomer.SelectedValue + "\n" + "Product Code: " + cbProoduct.SelectedValue +
-                "\n" + "Registration Date: " + txtDate.Text);
 
+            //condition to ensure data is valid before submitting registation
+            if (reg.ValidData)
+            {
+                //Registration printout
+                MessageBox.Show("Customer Name: " + cbCustomer.SelectedValue + "\n" + "Product Code: " + cbProoduct.SelectedValue +
+                    "\n" + "Registration Date: " + txtDate.Text);
+
+
+
+                //save registration
+                RegistrationDB.AddRegistration();
+            }
             
-
-            //save registration
-            RegistrationDB.AddRegistration();
         }
     }
 }

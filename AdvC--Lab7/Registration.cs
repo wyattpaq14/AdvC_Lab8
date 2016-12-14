@@ -12,6 +12,8 @@ namespace AdvC__Lab7
         private string productCode;
         private DateTime registrationDate;
 
+        //boolean property to make sure data is ready to be sent
+        private bool validData;
 
         public Registration() { }
 
@@ -24,6 +26,18 @@ namespace AdvC__Lab7
             set
             {
                 customerName = value;
+            }
+        }
+
+        public bool ValidData
+        {
+            get
+            {
+                return validData;
+            }
+            set
+            {
+                validData = value;
             }
         }
 
