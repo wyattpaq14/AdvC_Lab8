@@ -81,6 +81,7 @@
             this.btnRegisterProduct.TabIndex = 6;
             this.btnRegisterProduct.Text = "Register Product";
             this.btnRegisterProduct.UseVisualStyleBackColor = true;
+            this.btnRegisterProduct.Click += new System.EventHandler(this.btnRegisterProduct_Click);
             // 
             // btnCancel
             // 

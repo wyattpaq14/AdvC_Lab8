@@ -8,22 +8,22 @@ namespace AdvC__Lab7
 {
     public class Registration
     {
-        private int customerId;
+        private string customerName;
         private string productCode;
         private DateTime registrationDate;
 
 
         public Registration() { }
 
-        public int CustomerId
+        public string CustomerId
         {
             get
             {
-                return customerId;
+                return customerName;
             }
             set
             {
-                customerId = value;
+                customerName = value;
             }
         }
 

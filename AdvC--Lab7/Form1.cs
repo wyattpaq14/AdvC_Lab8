@@ -27,6 +27,20 @@ namespace AdvC__Lab7
 
             cbProoduct.DataSource = ProductDB.GetProducts();
 
+            
+
+        }
+
+        private void btnRegisterProduct_Click(object sender, EventArgs e)
+        {
+            //Registration printout
+
+            MessageBox.Show("Customer Name: " + cbCustomer.SelectedValue + "\n" + "Product Code: " + cbProoduct.SelectedValue);
+            
+
+
+            //save registration
+            RegistrationDB.AddRegistration();
         }
     }
 }
